@@ -1,14 +1,20 @@
 import React from 'react';
-import { Logo } from '../Components/Molecules/Logo/Logo';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+
+import { Home } from '../pages/Home/Home';
+import { MyProjects } from '../pages/MyProjects/MyProjects';
 
 import './styles/app.css';
 
 function App() {
   return (
     <div className="App">
-      <section className="home">
-        <Logo />
-      </section>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/projects" component={MyProjects} />
+        </Switch>
+      </Router>
     </div>
   );
 }
