@@ -1,0 +1,13 @@
+:root {
+  --bg-main: #fff4ea;
+  --color-second: #ff8071;
+  --color-text: #020009;
+  --color-title: #344ba6;
+  --color-error: #d90714;
+
+  --main-font: 'Montserrat', sans-serif;
+
+  --bold: 700;
+  --regular: 400;
+  --light: 300;
+}

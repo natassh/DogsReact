@@ -1,3 +1,4 @@
+/*
 import { str2DOMElement } from '../utils/str2DOMElement.js';
 import contentHTML from '../assets/content.html';
 
@@ -19,3 +20,4 @@ const getContentModal = () => {
 };
 
 export { getContentModal };
+*/

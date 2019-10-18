@@ -1,0 +1,28 @@
+.logo__picture {
+  margin: 0;
+  padding: 0;
+  max-width: 6rem;
+  max-height: 6rem;
+  transform: rotate(20deg);
+}
+.logo__picture img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .logo__picture {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+  .logo__picture {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+}
+@media screen and (max-width: 465px) {
+  .logo__picture {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+  }
+}

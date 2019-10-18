@@ -1,0 +1,17 @@
+/* Commons */
+@import 'commons.css';
+
+/* Global variables */
+@import 'global-var.css';
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    position: relative;
+    top: 20px;
+  }
+}
