@@ -1,9 +1,9 @@
 import React from 'react';
-import { TitleLogo } from '../../Atoms/TitleLogo/TitleLogo';
-import { ImageLogo } from '../../Atoms/ImageLogo/ImageLogo';
+import TitleLogo from '../../Atoms/TitleLogo/TitleLogo';
+import ImageLogo from '../../Atoms/ImageLogo/ImageLogo';
 import './Logo.css';
 
-export const Logo = () => {
+const Logo = () => {
   return (
     <header className="logo">
       <TitleLogo>Razas de perros</TitleLogo>
@@ -11,3 +11,5 @@ export const Logo = () => {
     </header>
   );
 };
+
+export default Logo;

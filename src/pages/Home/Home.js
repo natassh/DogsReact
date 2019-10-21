@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Logo } from '../../Components/Molecules/Logo/Logo';
-import { Link } from 'react-router-dom';
+import Logo from '../../Components/Molecules/Logo/Logo';
+import Footer from '../../Components/Molecules/Footer/Footer';
 
 import '../../App/styles/app.css';
 
@@ -9,9 +9,7 @@ export function Home() {
   return (
     <section className="home">
       <Logo />
-      <Link className="button button__fixed" to="/projects">
-        Proyectos
-      </Link>
+      <Footer />
     </section>
   );
 }
