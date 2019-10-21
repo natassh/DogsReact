@@ -1,0 +1,38 @@
+.form__select {
+  width: 15.5rem !important;
+  color: var(--color-text);
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.error {
+  border: 1px solid var(--color-error);
+}
+.ss-main .ss-content .ss-list {
+  max-height: 220px;
+}
+.ss-main .ss-single-selected {
+  height: 2.5rem !important;
+  border-radius: 5px;
+  border: none;
+}
+.ss-main .ss-content {
+  border: none;
+}
+.ss-main .ss-content .ss-list .ss-option,
+.ss-main .ss-single-selected .placeholder {
+  color: var(--color-title);
+}
+
+@media screen and (max-width: 768px) {
+  .ss-main .ss-single-selected {
+    height: 2.3rem !important;
+  }
+}
+@media screen and (max-width: 465px) {
+  .form__select {
+    width: 60% !important;
+  }
+}
