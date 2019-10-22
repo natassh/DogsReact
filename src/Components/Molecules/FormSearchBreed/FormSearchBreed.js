@@ -4,7 +4,7 @@ import Select from '../../Atoms/Select/Select';
 import ButtonSearch from '../../Atoms/ButtonSearch/ButtonSearch';
 //import SlimSelect from 'slim-select';
 
-import './Form.css';
+import './FormSearchBreed.css';
 
 function Form() {
   //new SlimSelect({
@@ -13,7 +13,7 @@ function Form() {
   return (
     <form className="form">
       <Label htmlFor="dog-selector" text="Elige la raza:" />
-      <Select />
+      <Select id="dog-selector" />
       <ButtonSearch type="submit" id="btn-submit" value="Pulsa para mostrar" />
     </form>
   );
