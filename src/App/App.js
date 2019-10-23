@@ -5,6 +5,7 @@ import { Home } from '../pages/Home/Home';
 import { MyProjects } from '../pages/MyProjects/MyProjects';
 
 import Footer from '../Components/Molecules/Footer/Footer';
+import Ribbon from '../packages/used-stack/Components/Ribbon/Ribbon';
 
 import './styles/app.css';
 
@@ -20,6 +21,7 @@ function App() {
           <Footer />
         </Router>
       </section>
+      <Ribbon text="Used stack" />
     </div>
   );
 }

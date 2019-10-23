@@ -1,12 +1,11 @@
 import React from 'react';
-import BreedSelect from '../BreedSelect/BreedSelect';
 
 import './Select.css';
 
-function Select({ id }) {
+function Select({ id, options = [] }) {
   return (
     <select id={id} className="form__select">
-      <BreedSelect />
+      {options}
     </select>
   );
 }
