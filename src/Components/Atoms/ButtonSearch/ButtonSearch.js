@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './ButtonSearch.css';
 
@@ -9,3 +10,9 @@ function ButtonSearch({ type, id, value }) {
 }
 
 export default ButtonSearch;
+
+ButtonSearch.propTypes = {
+  type: PropTypes.string,
+  id: PropTypes.string,
+  value: PropTypes.string
+};

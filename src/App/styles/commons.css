@@ -1,6 +1,3 @@
-html {
-  /*overflow: hidden;*/
-}
 body {
   margin: 0;
   padding: 0;
@@ -8,17 +5,4 @@ body {
   background-color: var(--bg-main);
   padding: 5rem 0rem;
   overflow: hidden;
-}
-/*Marvina carousel css */
-.mc > ul {
-  display: none !important;
-}
-
-@media screen and (max-width: 1440px) {
-  html {
-    overflow: hidden;
-  }
-  body {
-    height: 100vh;
-  }
 }

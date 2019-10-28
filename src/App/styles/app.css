@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 /* Commons */
 @import 'commons.css';
 
 /* Global variables */
 @import 'global-var.css';
 
+body {
+  overflow: auto;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.list-photos {
+  padding-bottom: 7rem;
 }
 @media screen and (max-width: 375px) {
   .logo {

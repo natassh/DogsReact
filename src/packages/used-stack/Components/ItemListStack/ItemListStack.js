@@ -1,21 +1,25 @@
 import React from 'react';
-import image from '../assets/images/js.png';
+import PropTypes from 'prop-types';
 
 import './ItemListStack.css';
 
-function ItemListStack() {
+function ItemListStack({ src, alt, title, content }) {
   return (
     <li>
       <figure>
-        <img src={image} alt="logo js" />
+        <img src={src} alt={alt} />
       </figure>
-      <h3>ES6</h3>
-      <p>
-        En este proyecto uso Arrow Functions, const, let, Async/Await, ES6
-        Modules, Fetch, etc.
-      </p>
+      <h3>{title}</h3>
+      <p>{content}</p>
     </li>
   );
 }
 
 export default ItemListStack;
+
+ItemListStack.propTypes = {
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.string
+};
