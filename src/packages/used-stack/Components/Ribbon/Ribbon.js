@@ -6,7 +6,7 @@ import './Ribbon.css';
 class Ribbon extends React.Component {
   _handleClick = dato => {
     const { onChange } = this.props;
-    onChange('true');
+    onChange(true);
   };
 
   render() {

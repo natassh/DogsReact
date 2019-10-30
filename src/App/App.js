@@ -12,15 +12,19 @@ import './styles/app.css';
 
 class App extends React.Component {
   state = {
-    isOpen: '',
-    isPressed: ''
+    isOpen: ''
+    //isPressed: ''
   };
   handleIsOpen = value => {
     this.setState({ isOpen: value });
   };
-  handleIsPressed = value => {
-    this.setState({ isPressed: value });
+
+  handleCloseModal = () => {
+    this.setState({ isOpen: false });
   };
+  //handleIsPressed = value => {
+  //this.setState({ isPressed: value });
+  //};
 
   render() {
     // console.log(this.state.isOpen);
@@ -37,9 +41,7 @@ class App extends React.Component {
           </Router>
         </section>
         <Ribbon text="Used stack" onChange={this.handleIsOpen} />
-        {this.state.isOpen === 'true' && (
-          <Modal onChange={this.handleIsPressed} />
-        )}
+        {this.state.isOpen && <Modal onClose={this.handleCloseModal} />}
       </div>
     );
   }

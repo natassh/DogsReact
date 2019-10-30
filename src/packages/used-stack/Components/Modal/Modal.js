@@ -9,15 +9,17 @@ import ListStack from '../ListStack/ListStack';
 import './Modal.css';
 
 class Modal extends React.Component {
-  handleClick = () => {
-    const { onChange } = this.props;
-    onChange('true');
+  handleCloseButtonClick = () => {
+    //const { onChange } = this.props;
+    //onChange(true);
+    const { onClose } = this.props;
+    onClose();
   };
   render() {
     return (
       <aside className="modal">
         <div className="modal__container">
-          <CloseButton text="X" onClick={this.handleClick} />
+          <CloseButton text="X" onClick={this.handleCloseButtonClick} />
           <article className="modal__content">
             <TitleModal text="Proyecto desarrollado con:" />
             <ListStack />
