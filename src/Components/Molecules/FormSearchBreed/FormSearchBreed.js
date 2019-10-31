@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Label from '../../Atoms/Label/Label';
-import BreedSelect from '../../Molecules/BreedSelect/BreedSelect';
+//import BreedSelect from '../../Molecules/BreedSelect/BreedSelect';
+import ReactBreedSelect from '../../Molecules/ReactBreedSelect/ReactBreedSelect';
 import ButtonSearch from '../../Atoms/ButtonSearch/ButtonSearch';
 
 import './FormSearchBreed.css';
@@ -37,7 +38,8 @@ export class FormSearchBreed extends React.Component {
     return (
       <form className="form" onSubmit={this._handleSubmit}>
         <Label htmlFor="dog-selector" text="Elige la raza:" />
-        <BreedSelect onChange={this._handleWhenTheSelectDataChanges} />
+        {/*<BreedSelect onChange={this._handleWhenTheSelectDataChanges} />*/}
+        <ReactBreedSelect onChange={this._handleWhenTheSelectDataChanges} />
         <ButtonSearch
           type="submit"
           id="btn-submit"
