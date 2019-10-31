@@ -4,5 +4,4 @@ body {
   position: relative;
   background-color: var(--bg-main);
   padding: 5rem 0rem;
-  overflow: hidden;
 }

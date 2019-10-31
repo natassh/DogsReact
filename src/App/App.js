@@ -13,7 +13,6 @@ import './styles/app.css';
 class App extends React.Component {
   state = {
     isOpen: ''
-    //isPressed: ''
   };
   handleIsOpen = value => {
     this.setState({ isOpen: value });
@@ -22,13 +21,8 @@ class App extends React.Component {
   handleCloseModal = () => {
     this.setState({ isOpen: false });
   };
-  //handleIsPressed = value => {
-  //this.setState({ isPressed: value });
-  //};
 
   render() {
-    // console.log(this.state.isOpen);
-    //console.log(this.state.isPressed);
     return (
       <div className="App">
         <section>
