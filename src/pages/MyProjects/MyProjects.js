@@ -46,6 +46,12 @@ export function MyProjects() {
           link="https://fundacioneki.org/"
           linkText="Ver el proyecto"
         />
+        <Project
+          title="Enlace a Linkedin donde puedes ver mis otros desarrollos"
+          content=""
+          link="https://www.linkedin.com/in/natacha-ivannikova-261478113/"
+          linkText="Conóceme"
+        />
       </div>
       <Link to={`/`} className="return">
         Volver al buscador
