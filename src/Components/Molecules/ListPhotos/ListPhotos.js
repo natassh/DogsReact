@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import * as Marvina from 'marvina-carousel-react';
+
 import './ListPhotos.css';
 
 class ListPhotos extends React.Component {
   printPhotos = breedPhotos => {
     let photos = breedPhotos.map(photo => (
-      <figure key={photo}>
+      <figure key={photo} className="mc-carousel-element">
         <img src={photo} alt="imagen de perro" />
       </figure>
     ));
@@ -16,9 +18,9 @@ class ListPhotos extends React.Component {
   render() {
     const breedPhotos = this.props.photos;
     return (
-      <section id="carousel" className="list-photos mc">
+      <Marvina.Group minImage={2}>
         {this.printPhotos(breedPhotos)}
-      </section>
+      </Marvina.Group>
     );
   }
 }

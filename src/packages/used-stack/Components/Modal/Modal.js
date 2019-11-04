@@ -9,9 +9,8 @@ import ListStack from '../ListStack/ListStack';
 import './Modal.css';
 
 class Modal extends React.Component {
-  handleCloseButtonClick = () => {
-    //const { onChange } = this.props;
-    //onChange(true);
+  handleCloseButtonClick = e => {
+    e.preventDefault();
     const { onClose } = this.props;
     onClose();
   };

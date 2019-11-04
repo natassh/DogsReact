@@ -1,0 +1,32 @@
+.itemProject h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  color: var(--color-second);
+  margin-bottom: 1rem;
+}
+.itemProject p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  color: var(--color-title);
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+.itemProject a {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  color: var(--color-title);
+  margin-bottom: 1rem;
+  text-decoration: overline;
+}
+.itemProject a:hover {
+  text-decoration: underline;
+}

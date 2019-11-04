@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Select from '../../Atoms/Select/Select';
+//import Select from '../../Atoms/Select/Select';
+import Select from 'react-select';
 
 import './BreedSelect.css';
 
 class BreedSelect extends React.Component {
   state = {
-    breeds: {},
+    breeds: [],
     value: 'a'
   };
 
@@ -16,6 +17,7 @@ class BreedSelect extends React.Component {
     fetch(endPoint)
       .then(res => res.json())
       .then(data => {
+        //console.log(data.message);
         const { message: breeds } = data;
         this.setState({ breeds });
       });
@@ -33,22 +35,27 @@ class BreedSelect extends React.Component {
   _handleChange = dato => {
     const { onChange } = this.props;
 
-    // const selectData = event.target.value;
-    onChange(dato);
-    this.setState({ value: dato });
+    onChange(dato.value);
+    this.setState({ value: dato.value });
   };
 
+  createObjectOptions = () => {
+    let { breeds } = this.state;
+    breeds = Object.keys(breeds);
+
+    const arrayOptionsObjects = breeds.map(breed => ({
+      value: breed,
+      label: breed
+    }));
+
+    return arrayOptionsObjects;
+  };
   render() {
-    //console.log(this.state.value);
-    const breeds = Object.keys(this.state.breeds);
     return (
       <Select
-        id="dog-selector"
-        value={this.state.value}
+        options={this.createObjectOptions()}
         onChange={this._handleChange}
-      >
-        {this.createOptions(breeds)}
-      </Select>
+      />
     );
   }
 }

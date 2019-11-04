@@ -1,0 +1,40 @@
+.return {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  height: 2.5rem;
+  color: var(--bg-main);
+  background-color: var(--color-title);
+  transition: background-color 0.3s;
+  border: 1px solid var(--color-title);
+  border-radius: 5px;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.return:hover {
+  text-decoration: underline;
+}
+
+.listProjects {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+.itemProject {
+  width: 40%;
+  margin: 1rem;
+  padding: 1rem;
+}

@@ -1,0 +1,12 @@
+.css-2b097c-container {
+  width: 15.5rem;
+  color: var(--color-title);
+  font-family: var(--main-font);
+  font-weight: var(--regular);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.css-1uccc91-singleValue {
+  color: var(--color-title) !important;
+}
