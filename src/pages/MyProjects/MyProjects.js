@@ -17,7 +17,7 @@ export function MyProjects() {
           linkText="Ver el proyecto"
         />
         <Project
-          title="Fotos de perritos"
+          title="Fotos de perritos con JavaScript"
           content="Aprendiendo JavaScript: ES6+, PostCSS, webpack, Netlify "
           link="https://dogs-sample-es6-webpack-project.netlify.com/"
           linkText="Ver el proyecto"
