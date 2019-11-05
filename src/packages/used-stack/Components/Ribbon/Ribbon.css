@@ -2,7 +2,7 @@
   display: inline-block;
   width: 300px;
   transform: rotate(38deg);
-  position: absolute;
+  position: fixed;
   right: -73px;
   top: 45px;
   cursor: pointer;

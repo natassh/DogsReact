@@ -138,20 +138,49 @@
 .mc .mc-arrow svg {
   fill: rgba(255, 128, 113, 0.6) !important;
 }
-/*
+.mc {
+  max-height: 25rem;
+  overflow: hidden;
+}
 .mc-carousel-element {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  max-height: 600px !important;
+  width: 50%;
+  /*
+  max-height: 25rem !important;
   overflow: hidden;
-}
-
-.mc-carousel-element {
-  width: 100%;
+  */
 }
 .mc-carousel-element img {
+  display: block;
   width: 100%;
 }
-*/
+@media screen and (min-width: 2000px) {
+  .mc {
+    max-height: 58rem;
+    overflow: hidden;
+  }
+  /*
+  .mc-carousel-element {
+    width: 100%;
+  }
+  */
+}
+@media screen and (min-width: 1853px) {
+  .mc {
+    max-height: 30rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mc {
+    max-height: 17rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mc {
+    max-height: 10rem;
+  }
+}

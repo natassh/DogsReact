@@ -14,13 +14,7 @@ function ListStack() {
         src={imageReact}
         alt="Logo React"
         title="React"
-        content="Desarrollado en React"
-      />
-      <ItemListStack
-        src={imageTools}
-        alt="Logo Tools"
-        title="Tooling"
-        content="ESLint y Netlify para el deploy."
+        content="Desarrollado en React con react-router, gestión de estado local, Componentes de tipo clase (cuando juego con el estado) y también funcionales. Uso dos librerías de terceros que son react-select y marvina-carousel-react."
       />
       <ItemListStack
         src={imageCss}
@@ -33,6 +27,12 @@ function ListStack() {
         alt="Logo Html5"
         title="Html5"
         content="Marcado semántico (aside, section, figure, etc.)"
+      />
+      <ItemListStack
+        src={imageTools}
+        alt="Logo Tools"
+        title="Tooling"
+        content="Netlify para el deploy."
       />
     </ul>
   );

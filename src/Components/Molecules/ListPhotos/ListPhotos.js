@@ -18,9 +18,13 @@ class ListPhotos extends React.Component {
   render() {
     const breedPhotos = this.props.photos;
     return (
-      <Marvina.Group minImage={2}>
-        {this.printPhotos(breedPhotos)}
-      </Marvina.Group>
+      <>
+        {breedPhotos.length > 0 && (
+          <Marvina.Group minImage={2}>
+            {this.printPhotos(breedPhotos)}
+          </Marvina.Group>
+        )}
+      </>
     );
   }
 }

@@ -30,3 +30,9 @@ footer .link:hover {
 .gh:hover a {
   color: #000;
 }
+@media screen and (max-width: 425px) {
+  footer .link a {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+}

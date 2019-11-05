@@ -18,9 +18,13 @@
   cursor: pointer;
   text-decoration: none;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 .return:hover {
   text-decoration: underline;
+}
+.title {
+  margin-top: 2rem;
 }
 
 .listProjects {
@@ -30,7 +34,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 5rem;
   margin-top: 3rem;
 }
 .itemProject {
